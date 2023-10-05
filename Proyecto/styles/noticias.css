@@ -1,0 +1,211 @@
+/* Resetear estilos predeterminados */
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Tipografía */
+body {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.burrito {
+    float: left;
+    width: 40px;
+    margin-right: 20px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: cursive;
+    text-align: right;
+    margin-right: 10px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+a:hover {
+    color: #F5B7B1;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    min-height: 60px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Contenido principal */
+main {
+    background-color: #fff;
+    margin: 1em 4em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección de Noticias */
+.noticias {
+    font-size: 18px;
+}
+
+.noticias h2 {
+    font-size: 24px;
+    border-bottom: 1px solid #999;
+    margin: 0 0 0.5em;
+}
+
+.noticias p {
+    margin: 0 0 0.5em;
+    line-height: 1.4;
+}
+
+.noticias .titulo {
+    font-size: 20px;
+    color: #728b96;
+    font-style: italic;
+}
+
+/* Imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #999;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    /* Aumenta el tamaño en un 5% */
+}
+
+/* *7
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #FFA500;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Estilos para la sección de Eventos */
+.eventos {
+    font-size: 18px;
+}
+
+.eventos h2 {
+    font-size: 24px;
+    border-bottom: 1px solid #999;
+    margin: 0 0 0.5em;
+}
+
+.eventos figure {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.eventos img {
+    max-width: 48%;
+    height: auto;
+    border: 1px solid #999;
+    padding: 5px;
+}
+
+/* Estilos para Promotores Culturales */
+.Promotores {
+    font-size: 18px;
+}
+
+.Promotores h2 {
+    font-size: 24px;
+    border-bottom: 1px solid #999;
+    margin: 0 0 0.5em;
+}
+
+.Promotores img {
+    width: 300px;
+    height: auto;
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+/* Estilos para la sección de revisiones */
+#revisiones {
+    margin-top: 1em;
+}
+
+#revisiones div {
+    border-bottom: 1px dashed #999;
+    margin-bottom: 1.25em;
+}
+
+table {
+    width: 100%;
+    /* Asegura que la tabla ocupe todo el ancho disponible */
+    border-collapse: collapse;
+    /* Combina los bordes de las celdas */
+    text-align: center;
+    /* Centra el texto en todas las celdas */
+}
+
+table img {
+    max-width: 100%;
+    /* Ajusta el tamaño máximo de las imágenes dentro de las celdas */
+    height: auto;
+    /* Mantiene la proporción de aspecto original de las imágenes */
+    display: block;
+    /* Evita problemas de alineación vertical con las imágenes */
+    margin: 0 auto;
+    /* Centra las imágenes horizontalmente */
+    cursor: pointer;
+}

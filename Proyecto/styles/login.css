@@ -1,0 +1,178 @@
+html{
+    background-color: #BFC9CA;
+    border: 0px;
+    padding: 0px;
+}
+
+.nam{
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    padding: 0;
+    height: 100vh;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRieXCB-m30UeENcg3XRpC6jsrh4uoNWBnU2A&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+header{
+    display: flex;
+    min-height: 60px;
+    background-color: white ;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family:cursive;
+    text-align:right;
+    margin-right: 10px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+a:hover{
+    color:#F5B7B1 ;
+}
+
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+    height: 40px;
+    margin-right: 10px;
+}
+
+.formulario{
+    position: absolute;
+    top: 35%;
+    left: 55%;
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+h2{
+    text-align: center;
+}
+
+
+ .formulario form{
+    padding: 0 40px;
+    box-sizing: border-box;
+ }
+
+ form .dos{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+ }
+
+ .dos input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+ } 
+
+
+ .dos label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+ }
+
+.recordar a{
+    font-family: sans-serif;
+}
+
+.recordar a:hover{
+    color: blue;
+}
+
+ .bt{
+    width: 50px;
+    height: 20px;
+    border-radius: 5px;
+    border: solid 1px #adadad;
+ }
+ .cuadro{
+    width: 100%;
+    max-width: 12000px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin: auto;
+    margin-left: 250px;
+    margin-top: 15px;
+}
+
+.cuadro .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0,20s;
+}
+
+.cuadro .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px rgb(0, 0, 0, 0.2);
+}
+
+.cuadro .card img{
+    width: 330px;
+    height: 220px;
+
+}
+
+.cuadro .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+.bt{
+    cursor: pointer;
+}
+
+.bt:hover{
+    color: blue;
+}
+
+footer{
+    background-color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 100px;
+ }
+ 
+
+ footer a, p{
+    font-family:Arial;
+    font-size: 15px;
+ }

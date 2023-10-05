@@ -1,0 +1,239 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+    text-align: center;
+}
+
+.titulo {
+    font-family: "Critter", sans-serif;
+    /* Cambia la fuente */
+    font-size: 34px;
+    /* Cambia el tamaño de fuente */
+    font-weight: 300;
+    /* Cambia el grosor de la fuente (negrita) */
+    color: #FFA500;
+    /* Cambia el color del texto */
+    font-style: italic;
+    cursor: pointer;
+
+}
+
+
+.Introduccion {
+    text-align: justify;
+    line-height: 150%;
+    font-size: 23px
+}
+
+.info {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: cursive;
+    text-align: right;
+    margin-right: 10px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+a:hover {
+    color: #F5B7B1;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    min-height: 60px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+/*header {
+    background-image: url('upiitportada.jpeg');
+    /* Ruta de la imagen de fondo */
+/* background-size: cover;
+    /* Ajustar la imagen para cubrir todo el encabezado */
+/* background-repeat: no-repeat;
+    /* Evitar que la imagen de fondo se repita */
+/* background-position: center center;
+    /* Centrar la imagen de fondo */
+/* background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /* Agrega una sombra */
+/*cursor: pointer;
+}*/
+
+header h1 {
+    font-size: 48px;
+    /* Tamaño más grande */
+    margin-bottom: 10px;
+    font-weight: bold;
+    /* Negrita */
+    text-transform: uppercase;
+    /* Texto en mayúsculas */
+    letter-spacing: 2px;
+    /* Espaciado entre letras */
+}
+
+header h2 {
+    font-size: 24px;
+    /* Tamaño más grande */
+    margin-top: 0;
+    font-style: italic;
+    color: #FFA500;
+    /* Cambia el color del subtitulo */
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Contenido principal */
+main {
+    background-color: #eef2e3;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+main h3 {
+    font-size: 20px;
+}
+
+/* Tabla de clubes */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin-top: 20px;
+}
+
+table tr {
+    border-bottom: 1px solid #ddd;
+}
+
+table td {
+    padding: 20px;
+    vertical-align: middle;
+}
+
+table img {
+    width: 500px;
+    /* Establece un ancho fijo para todas las imágenes */
+    height: auto;
+    /* Mantiene la proporción original */
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    /* Aumenta el tamaño en un 5% */
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+footer a {
+    color: #FFA500;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Estilos para la sección de comentarios */
+.comentarios {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.comentario {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para el nombre del usuario */
+.nombre {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilos para el mensaje del comentario */
+.mensaje {
+    color: #555;
+}
+
+.comentarios {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+textarea#comentario {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    /* Permite redimensionar verticalmente */
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}

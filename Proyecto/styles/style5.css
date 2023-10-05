@@ -1,0 +1,176 @@
+html{
+    background-color: #BFC9CA;
+    border: 0px;
+    padding: 0px;
+}
+
+.nam{
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: sans-serif;;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family:cursive;
+    text-align:right;
+    margin-right: 10px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+a:hover{
+    color:#F5B7B1 ;
+}
+
+header{
+    display: flex;
+    min-height: 60px;
+    background-color: white ;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+    height: 40px;
+    margin-right: 10px;
+}
+
+body{
+
+    min-height: 100vh;
+    display:flexbox;
+    justify-content: center;
+    align-items: center;
+    background: url(https://img.freepik.com/vector-gratis/fondo-blanco-gris-brillante-lineas-onduladas_1017-25101.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bt{
+    width: 125px;
+    height: 30px;
+    border-radius: 5px;
+    background: #DBE4E9;
+    border: solid 1px #BFC9CA ;
+}
+
+.buscar{
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    border: solid 1px #44B6F0 ;
+}
+
+.button{
+    width: 50px;
+    height: 30px;
+    border-radius: 5px;
+    background: #DBE4E9;
+    border: solid 1px #BFC9CA;
+}
+
+#btn{
+    cursor: pointer;
+}
+
+#btn:hover{
+    color: white;
+}
+
+table, th, td{
+    padding: 1rem;
+    border-collapse: collapse;
+
+}
+
+main.table{
+    width: 82vw;
+    height: 90vw;
+    background-color: #fff5;
+
+    backdrop-filter: blur(7px);
+    box-shadow: 0,4trm .8rem #0005;
+    border-radius: .8rem;
+
+    overflow: hidden;
+}
+
+.tablah{
+    width: 100%;
+    height: 10%;
+    background-color: #fff4;
+    padding: .8rem 1rem;
+}
+
+.tablab{
+    width: 85%;
+    max-height: calc(89%-.8rem);
+    background-color: #fffb;
+    margin: .8rem auto;
+    border-radius: .6rem;
+
+    overflow: auto;
+
+}
+
+table{
+    width: 100%;
+}
+
+thead th{
+     position: sticky;
+     top: 0;
+     left: 0;
+     background-color: #d5d1defe;
+}
+
+
+tbody tr:nth-child(even){
+    background-color: #0000000b;
+}
+
+td img{
+    width: 36px;
+    height: 36px;
+    margin-right: .5rem;
+    border-radius: 50%;
+
+    vertical-align: middle;
+}
+
+tr{
+    cursor: pointer;
+}
+
+tr:hover{
+    color: goldenrod;
+}
+
+footer{
+    background-color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 100px;
+ }
+
+ footer a, p{
+    font-family:Arial;
+    font-size: 15px;
+ }
