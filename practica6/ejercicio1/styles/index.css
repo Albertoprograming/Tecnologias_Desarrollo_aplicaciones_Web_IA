@@ -1,0 +1,136 @@
+h1,
+h1,
+h3,
+p,
+body,
+div {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, Helvetica, sans-serif;
+}
+
+/*el asterisco selecciona todo lo de la pagina*/
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    font-size: 1.8em;
+    padding: 0;
+    /* Aquí debes especificar el valor del padding, por ejemplo, padding: 10px; */
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+h2 {
+
+    font-size: 1.2em;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+article {
+    background-color: #f5f5f5;
+    width: 70%;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+
+}
+
+article div {
+    clear: right;
+}
+
+figure {
+    position: relative;
+    float: left;
+}
+
+figcaption {
+    width: 143px;
+    background-color: black;
+    color: white;
+    height: 20px;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    padding-right: 0.5em;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+
+
+}
+
+.overimage {
+    position: absolute;
+    left: 1px;
+    bottom: 3px;
+}
+
+
+
+.information {
+    overflow: auto;
+    border-top: 1px solid #ff8800;
+}
+
+.linkbutton {
+    background-color: #FF8800;
+    color: white;
+    text-decoration: none;
+    font-size: 0.75em;
+    float: right;
+    padding: 0.8em;
+    margin-right: 1em;
+
+}
+
+footer {
+    background-color: #474747;
+    color: #cbcbcb;
+    min-width: 100%;
+    margin-top: 2em;
+    padding: 1em;
+}
+
+footer h2 {
+    color: #a4a1a1;
+}
+
+.footer {
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+    float: left;
+    border-bottom: 1px solid;
+    color: #ff8800;
+    width: 100%;
+
+}
+
+.footer img {
+    margin: 3px;
+    width: 45px;
+    height: 45px;
+}
+
+.footerSection {
+    margin-right: 1.5em;
+    padding: 0.26em;
+    overflow: hidden;
+    min-width: 70%;
+    border-bottom: 1px solid;
+    color: #ff8800;
+}
