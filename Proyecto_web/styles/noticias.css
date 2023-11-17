@@ -1,0 +1,353 @@
+/* Resetear estilos predeterminados */
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Tipografía */
+body {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px; /* Ajustado el padding */
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Añadida una sutil sombra */
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px; /* Ajustado el tamaño de la fuente */
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+    font-size: 16px; /* Ajustado el tamaño de la fuente */
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+.carrito {
+    filter: invert(100%);
+    width: 35px; /* Ajustado el tamaño del icono del carrito */
+    height: auto;
+    cursor: pointer;
+}
+
+.scroll {
+    background-color: aliceblue;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.scroll img {
+    filter: invert(15%);
+}
+
+.scroll h1 {
+    color: #3f1d2e;
+}
+
+.scroll a {
+    color: #3f1d2e;
+}
+
+/* Añadido un estilo hover sutil para el carrito */
+.carrito:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para el botón de cerrar */
+.cerrar {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    z-index: 1001; /* Asegura que la "x" esté sobre las notificaciones */
+}
+
+/* Estilos para el contenedor de notificaciones */
+.notificaciones-popup {
+    position: absolute;
+    top: calc(100% + 10px); /* Ubica el cuadro justo debajo del enlace de notificaciones */
+    right: 10px;
+    background-color: #3f1d2e; /* Color de fondo del contenedor de notificaciones */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    display: none; /* Oculta por defecto */
+}
+
+/* Estilos para las notificaciones */
+.notificaciones-content {
+    padding: 10px;
+}
+
+.notificaciones-content ul {
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+    list-style-type: none; /* Elimina los puntos de la lista */
+}
+
+.notificaciones-content ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out; /* Añade una transición para el cambio de color */
+    border-bottom: 1px solid #543356; /* Línea separadora sutil */
+    position: relative; /* Permite posicionar la "x" dentro de cada notificación */
+}
+
+/* Ajustes para la posición de la "x" en relación con la notificación */
+.notificaciones-content ul li .cerrar {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+/* Cambia el color de fondo al pasar el ratón por una notificación */
+.notificaciones-content ul li:hover {
+    background-color: #543356;
+}
+
+/* Estilos adicionales para el enlace de notificaciones */
+#notificacionesLink {
+    position: relative; /* Permite posicionar el cuadro de notificaciones relativo a este enlace */
+}
+
+/* Estilos adicionales para la barra de navegación y el contenedor del carrito */
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-container {
+    position: relative;
+}
+
+.carrito {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#numero {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff0000; /* Color del fondo del número en el carrito */
+    color: #fff; /* Color del texto del número en el carrito */
+    border-radius: 50%; /* Forma del número en el carrito */
+    padding: 5px;
+    font-size: 12px;
+}
+
+
+
+/* Contenido principal */
+main {
+    background-color: #fff;
+    margin: 1em 4em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Sección de Noticias */
+.noticias {
+    font-size: 18px;
+}
+
+.noticias h2 {
+    font-size: 24px;
+    border-bottom: 1px solid #999;
+    margin: 0 0 0.5em;
+}
+
+.noticias p {
+    margin: 0 0 0.5em;
+    line-height: 1.4;
+}
+
+.noticias .titulo {
+    font-size: 20px;
+    color: #728b96;
+    font-style: italic;
+}
+
+/* Imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #999;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    /* Aumenta el tamaño en un 5% */
+}
+
+/* *7
+/* Pie de página */
+footer {
+    background-color: rgb(236, 240, 241, 10);
+    padding: 40px 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil en la parte superior */
+}
+
+/* Enlaces */
+footer a {
+    text-decoration: none;
+    color: #444;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 20px; /* Mayor espacio entre los enlaces */
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    border-bottom: 2px solid transparent; /* Subrayado transparente */
+}
+
+/* Estilo al pasar el mouse */
+footer a:hover {
+    color: #F5B7B1;
+    border-bottom-color: #F5B7B1; 
+}
+
+/* Texto de Copyright */
+#copy {
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5; 
+}
+
+#last-update {
+    font-size: 18px;
+    color: #888;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    #copy {
+        font-size: 14px;
+    }
+}
+
+/* Estilos para la sección de Eventos */
+.eventos {
+    font-size: 18px;
+}
+
+.eventos h2 {
+    font-size: 24px;
+    border-bottom: 1px solid #999;
+    margin: 0 0 0.5em;
+}
+
+.eventos figure {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.eventos img {
+    max-width: 48%;
+    height: auto;
+    border: 1px solid #999;
+    padding: 5px;
+}
+
+/* Estilos para Promotores Culturales */
+.Promotores {
+    font-size: 18px;
+}
+
+.Promotores h2 {
+    font-size: 24px;
+    border-bottom: 1px solid #999;
+    margin: 0 0 0.5em;
+}
+
+.Promotores img {
+    width: 300px;
+    height: auto;
+    border: 1px solid #999;
+    padding: 10px;
+}
+
+/* Estilos para la sección de revisiones */
+#revisiones {
+    margin-top: 1em;
+}
+
+#revisiones div {
+    border-bottom: 1px dashed #999;
+    margin-bottom: 1.25em;
+}
+
+table {
+    width: 100%;
+    /* Asegura que la tabla ocupe todo el ancho disponible */
+    border-collapse: collapse;
+    /* Combina los bordes de las celdas */
+    text-align: center;
+    /* Centra el texto en todas las celdas */
+}
+
+table img {
+    max-width: 100%;
+    /* Ajusta el tamaño máximo de las imágenes dentro de las celdas */
+    height: auto;
+
+    display: block;
+
+    margin: 0 auto;
+   
+    cursor: pointer;
+}
+
+/*respinsivo*/
+@media only screen and (max-width: 768px) {
+
+}
+
+
+@media only screen and (max-width: 480px) {
+   
+}
+
+@media only screen and (max-width: 600px) {
+
+}

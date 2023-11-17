@@ -1,0 +1,459 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing:border-box;
+  }
+  
+  :focus{
+      outline: none;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px; /* Ajustado el padding */
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Añadida una sutil sombra */
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px; /* Ajustado el tamaño de la fuente */
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+    font-size: 16px; /* Ajustado el tamaño de la fuente */
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+.carrito {
+    filter: invert(100%);
+    width: 35px; /* Ajustado el tamaño del icono del carrito */
+    height: auto;
+    cursor: pointer;
+}
+
+.scroll {
+    background-color: aliceblue;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.scroll img {
+    filter: invert(15%);
+}
+
+.scroll h1 {
+    color: #3f1d2e;
+}
+
+.scroll a {
+    color: #3f1d2e;
+}
+
+/* Añadido un estilo hover sutil para el carrito */
+.carrito:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para el botón de cerrar */
+.cerrar {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    z-index: 1001; /* Asegura que la "x" esté sobre las notificaciones */
+}
+
+/* Estilos para el contenedor de notificaciones */
+.notificaciones-popup {
+    position: absolute;
+    top: calc(100% + 10px); /* Ubica el cuadro justo debajo del enlace de notificaciones */
+    right: 10px;
+    background-color: #3f1d2e; /* Color de fondo del contenedor de notificaciones */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    display: none; /* Oculta por defecto */
+}
+
+/* Estilos para las notificaciones */
+.notificaciones-content {
+    padding: 10px;
+}
+
+.notificaciones-content ul {
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+    list-style-type: none; /* Elimina los puntos de la lista */
+}
+
+.notificaciones-content ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out; /* Añade una transición para el cambio de color */
+    border-bottom: 1px solid #543356; /* Línea separadora sutil */
+    position: relative; /* Permite posicionar la "x" dentro de cada notificación */
+}
+
+/* Ajustes para la posición de la "x" en relación con la notificación */
+.notificaciones-content ul li .cerrar {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+/* Cambia el color de fondo al pasar el ratón por una notificación */
+.notificaciones-content ul li:hover {
+    background-color: #543356;
+}
+
+/* Estilos adicionales para el enlace de notificaciones */
+#notificacionesLink {
+    position: relative; /* Permite posicionar el cuadro de notificaciones relativo a este enlace */
+}
+
+/* Estilos adicionales para la barra de navegación y el contenedor del carrito */
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-container {
+    position: relative;
+}
+
+.carrito {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#numero {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff0000; /* Color del fondo del número en el carrito */
+    color: #fff; /* Color del texto del número en el carrito */
+    border-radius: 50%; /* Forma del número en el carrito */
+    padding: 5px;
+    font-size: 12px;
+}
+
+
+
+  body{
+      background: #DBDBDB;
+      font-family: 'Open sans';
+  }
+  
+  /* FORMULARIO =================================== */
+  
+  .form_wrap{
+      width: 1050px;
+      height: 530px;
+      margin: 50px auto;
+      display: flex;
+  
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Informacion de Contacto*/
+  
+  .cantact_info::before{
+      content: '';
+      width: 100%;
+      height: 100%;
+  
+      position: absolute;
+      top: 0;
+      left: 0;
+  
+      background: rgba(0, 0, 0, 0.5);
+
+      opacity: 0.9;
+  }
+  
+  .cantact_info{
+      width: 38%;
+      position: relative;
+  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+      background-image: url('../images/burrito.png');
+      background-size: cover;
+      background-position: center center;
+  
+  }
+  
+  .info_title,
+  .info_items{
+      position: relative;
+      z-index: 2;
+      color: #fff;
+  }
+  
+  .info_title{
+      margin-bottom: 60px;
+  }
+  
+  .info_title span{
+      font-size: 100px;
+      display: block;
+      text-align: center;
+      margin-bottom: 15px;
+  }
+  
+  .info_title h2{
+      font-size: 35px;
+      text-align: center;
+  }
+  
+  .info_items p{
+      display: flex;
+      align-items: center;
+  
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 10px;
+  }
+  
+  .info_items p:nth-child(1) span{
+      font-size: 30px;
+      margin-right: 10px;
+  }
+  
+  .info_items p:nth-child(2) span{
+      font-size: 50px;
+      margin-right: 15px;
+      margin-left: 4px;
+  }
+  
+  
+  /* Formulario de contacto*/
+  form.form_contact{
+    width: 62%;
+    padding: 30px 40px;
+}
+
+form.form_contact h2{
+    font-size: 25px;
+    font-weight: 600;
+    color: #303030;
+    margin-bottom: 30px;
+}
+
+form.form_contact .user_info{
+    display: flex;
+    flex-direction: column;
+}
+
+form.form_contact label {
+  font-weight: 600;
+  color: #303030;
+  margin-bottom: 8px;
+}
+form.form_contact input,
+form.form_contact textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: 'Open sans';
+  font-size: 14px;
+  color: #333;
+}
+
+    
+form.form_contact textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 90px;
+}
+
+form.form_contact input[type="button"]{
+    width: 180px;
+    background: #4091EC;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+
+    align-self: flex-end;
+
+    color: #fff;
+    font-family: 'Open sans';
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+form.form_contact input[type="button"]:hover{
+    background: #3371B6;
+}
+
+
+
+
+
+  /* Ventana de errores*/
+  .modal_wrap{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.7);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje_modal{
+    background: #fff;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    width: 400px;
+    padding: 30px 20px 15px;
+}
+
+.mensaje_modal h3{
+    text-align: center;
+    font-family: 'Ubuntu';
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.mensaje_modal h3:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #C5C5C5;
+    margin: 10px 0px 15px;
+}
+
+.mensaje_modal p{
+    font-size: 16px;
+    color: #606060;
+}
+
+.mensaje_modal p:before{
+    content: "\f00d";
+    font-family: FontAwesome;
+    display: inline-block;
+    color: #E25151;
+    margin-right: 8px;
+}
+
+#btnClose{
+    display: inline-block;
+    padding: 3px 10px;
+    margin-top: 10px;
+
+    background: #E25151;
+    color: #fff;
+    border: 2px solid #B14141;
+    cursor: pointer;
+
+    float: right;
+}
+
+
+/*foote*/
+footer {
+    background-color: rgb(236, 240, 241, 10);
+    padding: 40px 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil en la parte superior */
+}
+
+/* Enlaces */
+footer a {
+    text-decoration: none;
+    color: #444;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 20px; /* Mayor espacio entre los enlaces */
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    border-bottom: 2px solid transparent; /* Subrayado transparente */
+}
+
+/* Estilo al pasar el mouse */
+footer a:hover {
+    color: #F5B7B1;
+    border-bottom-color: #F5B7B1; 
+}
+
+/* Texto de Copyright */
+#copy {
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5; 
+}
+
+#last-update {
+    font-size: 18px;
+    color: #888;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    #copy {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .form_wrap {
+        width: 95%; /* Ajuste del ancho para tamaños de pantalla medianos */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .form_wrap {
+        width: 100%; /* Ancho completo para dispositivos móviles */
+    }
+    
+    /* Otros ajustes según sea necesario */
+}

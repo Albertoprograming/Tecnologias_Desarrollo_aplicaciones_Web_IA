@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/noticias.css">
+    <script src="scripts/footer.js" defer></script>
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Noticias_UPIIT_IPN</title>
+    <link rel="webside icon" type="png" href="Images\paginaini\icon.png">
+</head>
+
+<body>
+    <!--  <header>
+        <h1>Portal Instituto Politecnico Nacional</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio">Inicio</a></li>
+                <li><a href="#promo">Promotores culturales</a></li>
+                <li><a href="#evento">Proximos eventos</a></li>
+            </ul>
+        </nav>
+    </header>-->
+    <header id="header">
+        <div class="logo-container">
+            <h1>Noticias</h1>
+        </div>
+        <nav id="main-nav">
+            <a href="Principal.html">Inicio</a>
+            <a href="Profesores.html">Profesores</a>
+            <div class="notifications">
+                <a href="javascript:void(0)" id="notificacionesLink" onclick="mostrarNotificaciones()">Notificaciones <span id="contadorNotificaciones">0</span></a>
+                <div id="notificacionesPopUp" class="notificaciones-popup">
+                    <div class="notificaciones-content">
+                        <span class="cerrar" onclick="cerrarNotificaciones()">&times;</span>
+                        <h2>Notificaciones</h2>
+                        <p id="numNotificaciones">Tienes <span id="numNotificacionesContador">3</span> notificaciones</p>
+                        <ul id="listaNotificaciones">
+                            <li>Notificación 1</li>
+                            <li>Notificación 2</li>
+                            <li>Notificación 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="noticias">
+            <section class="noticias">
+                <h2>Últimas Noticias</h2>
+                <table>
+                    <tr class="tabla_1">
+                        <td>
+                            <p class="titulo">¿El IPN se va de Tlaxcala?</p>
+                            <section>
+                                Lunes 9 de octubre de 2023 se decide si el IPN se va a Huamantla
+                            </section>
+                            <figure>
+                                <img src="images/LORENAIPNLUNES.jpg" alt="Club de Voleyball" title="Voley">
+                            </figure>
+                        </td>
+                        <td>
+                            <p class="titulo"> Conmemoran el 2 de octubre</p>
+                            <section>
+                                Agradecemiento a alumnos que participarón en la elaboracion del mural en razón de
+                                conmemorar el 2 de octubre.
+                            </section>
+                            <figure>
+                                <img src="images/2_Octubre.jpg" alt="2_Octubre" title="Conmemoración">
+                            </figure>
+                        </td>
+
+                        <td>
+                            <p class="titulo"> Termina fecha de registro</p>
+                            <section>
+                                Termino la fecha poder registrarse
+                            </section>
+                            <figure>
+                                <img src="images/beca1.jpg" alt="beca" title="Finbecas">
+                            </figure>
+                        </td>
+                    </tr>
+
+                </table>
+            </section>
+
+        </div>
+
+        <div class="eventos" id="evento">
+            <section class="eventos">
+                <h2>Próximos Eventos</h2>
+                <figure>
+                    <img src="images/jalowin.jpg" alt="jalowin" title="Evento1">
+                    <img src="images/jalowin2.jpg" alt="jalowin2" title="Evento2">
+                </figure>
+            </section>
+        </div>
+
+        <div class="Promotores" id="promo">
+            <section class="Promotores culturales">
+                <h2>Promotores Culurales</h2>
+                <img src="images/promotores1.jpg" alt="jalowin" title="Evento1">
+                <img src="images/promotores2.jpg" alt="jalowin" title="Evento2">
+        </div>
+    </main> 
+
+    <footer>
+        <a href="https://www.facebook.com/profile.php?id=100075559917119&mibextid=ZbWKwL">Facebook</a>
+        <a href="https://www.instagram.com/upiit_ipn/">Instagram</a>
+        <a href="formulario.html">Contacto</a>
+        <p id="copy"><em>Copyright &copy; 2023 Unidad Profesional Interdisciplinaria de Ingeniería Campus Tlaxcala</em>
+        <p id="last-update">Última actualización: <span id="hoy"></span></p>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,352 @@
+html{
+    background-color: #BFC9CA;
+    border: 0px;
+    padding: 0px;
+}
+
+.nam{
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: sans-serif;;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px; /* Ajustado el padding */
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Añadida una sutil sombra */
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px; /* Ajustado el tamaño de la fuente */
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+    font-size: 16px; /* Ajustado el tamaño de la fuente */
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+.carrito {
+    filter: invert(100%);
+    width: 35px; /* Ajustado el tamaño del icono del carrito */
+    height: auto;
+    cursor: pointer;
+}
+
+.scroll {
+    background-color: aliceblue;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.scroll img {
+    filter: invert(15%);
+}
+
+.scroll h1 {
+    color: #3f1d2e;
+}
+
+.scroll a {
+    color: #3f1d2e;
+}
+
+/* Añadido un estilo hover sutil para el carrito */
+.carrito:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para el botón de cerrar */
+.cerrar {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    z-index: 1001; /* Asegura que la "x" esté sobre las notificaciones */
+}
+
+/* Estilos para el contenedor de notificaciones */
+.notificaciones-popup {
+    position: absolute;
+    top: calc(100% + 10px); /* Ubica el cuadro justo debajo del enlace de notificaciones */
+    right: 10px;
+    background-color: #3f1d2e; /* Color de fondo del contenedor de notificaciones */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    display: none; /* Oculta por defecto */
+}
+
+/* Estilos para las notificaciones */
+.notificaciones-content {
+    padding: 10px;
+}
+
+.notificaciones-content ul {
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+    list-style-type: none; /* Elimina los puntos de la lista */
+}
+
+.notificaciones-content ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out; /* Añade una transición para el cambio de color */
+    border-bottom: 1px solid #543356; /* Línea separadora sutil */
+    position: relative; /* Permite posicionar la "x" dentro de cada notificación */
+}
+
+/* Ajustes para la posición de la "x" en relación con la notificación */
+.notificaciones-content ul li .cerrar {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+/* Cambia el color de fondo al pasar el ratón por una notificación */
+.notificaciones-content ul li:hover {
+    background-color: #543356;
+}
+
+/* Estilos adicionales para el enlace de notificaciones */
+#notificacionesLink {
+    position: relative; /* Permite posicionar el cuadro de notificaciones relativo a este enlace */
+}
+
+/* Estilos adicionales para la barra de navegación y el contenedor del carrito */
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-container {
+    position: relative;
+}
+
+.carrito {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#numero {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff0000; /* Color del fondo del número en el carrito */
+    color: #fff; /* Color del texto del número en el carrito */
+    border-radius: 50%; /* Forma del número en el carrito */
+    padding: 5px;
+    font-size: 12px;
+}
+
+
+
+body{
+
+    min-height: 100vh;
+    display:flexbox;
+    justify-content: center;
+    align-items: center;
+    background: url(https://img.freepik.com/vector-gratis/fondo-blanco-gris-brillante-lineas-onduladas_1017-25101.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.buscar {
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid 1px #44B6F0;
+    padding: 5px; /* Añade un espacio interno */
+}
+
+.button {
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    background: #44B6F0; 
+    border: solid 1px #27ae60; 
+    color: #fff;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #2980b9;
+}
+
+#btn{
+    cursor: pointer;
+}
+
+
+table, th, td{
+    padding: 1rem;
+    border-collapse: collapse;
+
+}
+
+main.table{
+    width: 82vw;
+    height: 90vw;
+    background-color: #fff5;
+
+    backdrop-filter: blur(7px);
+    box-shadow: 0,4trm .8rem #0005;
+    border-radius: .8rem;
+
+    overflow: hidden;
+}
+
+.tablah{
+    width: 100%;
+    height: 10%;
+    background-color: #fff4;
+    padding: .8rem 1rem;
+}
+
+.tablab{
+    width: 85%;
+    max-height: calc(89%-.8rem);
+    background-color: #fffb;
+    margin: .8rem auto;
+    border-radius: .6rem;
+
+    overflow: auto;
+
+}
+
+table{
+    width: 100%;
+}
+
+thead th{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #d5d1defe;
+}
+
+
+tbody tr:nth-child(even){
+    background-color: #0000000b;
+}
+
+td img{
+    width: 36px;
+    height: 36px;
+    margin-right: .5rem;
+    border-radius: 50%;
+
+    vertical-align: middle;
+}
+
+tr{
+    cursor: pointer;
+}
+
+tr:hover{
+    color: goldenrod;
+}
+/*footer yo*/
+footer {
+    background-color: rgb(236, 240, 241, 10);
+    padding: 40px 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil en la parte superior */
+}
+
+/* Enlaces */
+footer a {
+    text-decoration: none;
+    color: #444;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 20px; /* Mayor espacio entre los enlaces */
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    border-bottom: 2px solid transparent; /* Subrayado transparente */
+}
+
+/* Estilo al pasar el mouse */
+footer a:hover {
+    color: #F5B7B1;
+    border-bottom-color: #F5B7B1; 
+}
+
+/* Texto de Copyright */
+#copy {
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5; 
+}
+
+#last-update {
+    font-size: 18px;
+    color: #888;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    #copy {
+        font-size: 14px;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .buscar {
+        width: 60%; /* Ajuste de tamaño en pantallas medianas */
+    }
+    .button {
+        width: 40%; 
+    }
+   
+}
+
+@media only screen and (max-width: 480px) {
+    .buscar {
+        width: 80%; 
+    }
+    .button {
+        width: 60%; 
+    }
+   
+}

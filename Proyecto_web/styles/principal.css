@@ -1,0 +1,548 @@
+html{
+    background-color: #BFC9CA;
+    border: 0px;
+    padding: 0px;
+}
+
+.nam{
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(https://www.10wallpaper.com/wallpaper/3840x2400/1803/Artificial_Intelligence_Robot_Humanoid_3840x2400.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family:cursive;
+    text-align:right;
+    margin-right: 10px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+a:hover{
+    color:#F5B7B1 ;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px; /* Ajustado el padding */
+    background-color: #333;
+    color: #3f1d2e;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Añadida una sutil sombra */
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px; /* Ajustado el tamaño de la fuente */
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3f1d2e;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+    font-size: 16px; /* Ajustado el tamaño de la fuente */
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+.carrito {
+    filter: invert(100%);
+    width: 35px; /* Ajustado el tamaño del icono del carrito */
+    height: auto;
+    cursor: pointer;
+}
+
+.scroll {
+    background-color: aliceblue;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.scroll img {
+    filter: invert(15%);
+}
+
+.scroll h1 {
+    color: #3f1d2e;
+}
+
+.scroll a {
+    color: #3f1d2e;
+}
+
+/* Añadido un estilo hover sutil para el carrito */
+.carrito:hover {
+    transform: scale(1.1);
+}
+
+/* Estilos para el botón de cerrar */
+.cerrar {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    z-index: 1001; /* Asegura que la "x" esté sobre las notificaciones */
+}
+
+/* Estilos para el contenedor de notificaciones */
+.notificaciones-popup {
+    position: absolute;
+    top: calc(100% + 10px); /* Ubica el cuadro justo debajo del enlace de notificaciones */
+    right: 10px;
+    background-color: #3f1d2e; /* Color de fondo del contenedor de notificaciones */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    display: none; /* Oculta por defecto */
+}
+
+/* Estilos para las notificaciones */
+.notificaciones-content {
+    padding: 10px;
+}
+
+.notificaciones-content ul {
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+    list-style-type: none; /* Elimina los puntos de la lista */
+}
+
+.notificaciones-content ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out; /* Añade una transición para el cambio de color */
+    border-bottom: 1px solid white; /* Línea separadora sutil */
+    position: relative; /* Permite posicionar la "x" dentro de cada notificación */
+}
+
+/* Ajustes para la posición de la "x" en relación con la notificación */
+.notificaciones-content ul li .cerrar {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+/* Cambia el color de fondo al pasar el ratón por una notificación */
+.notificaciones-content ul li:hover {
+    background-color: #543356;
+}
+
+/* Estilos adicionales para el enlace de notificaciones */
+#notificacionesLink {
+    position: relative; /* Permite posicionar el cuadro de notificaciones relativo a este enlace */
+}
+
+/* Estilos adicionales para la barra de navegación y el contenedor del carrito */
+#main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-container {
+    position: relative;
+}
+
+.carrito {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#numero {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #ff0000; /* Color del fondo del número en el carrito */
+    color: #fff; /* Color del texto del número en el carrito */
+    border-radius: 50%; /* Forma del número en el carrito */
+    padding: 5px;
+    font-size: 12px;
+}
+
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+    height: 40px;
+    margin-right: 10px;
+}
+
+.publicidad img{
+    display: flex;
+    height: 250px;
+    margin-left: 1050px;
+}
+
+h3{
+    display: flex;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    padding-left: 50px;
+    margin-left: 900px;
+    margin-top: 120px;
+}
+
+/*--------------cambios footer---------------------*/
+/* Footer */
+footer {
+    background-color: rgb(236, 240, 241, 10);
+    padding: 40px 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil en la parte superior */
+}
+
+/* Enlaces */
+footer a {
+    text-decoration: none;
+    color: #444;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 20px; /* Mayor espacio entre los enlaces */
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    border-bottom: 2px solid transparent; /* Subrayado transparente */
+}
+
+/* Estilo al pasar el mouse */
+footer a:hover {
+    color: #F5B7B1;
+    border-bottom-color: #F5B7B1; 
+}
+
+/* Texto de Copyright */
+#copy {
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5; 
+}
+
+#last-update {
+    font-size: 18px;
+    color: #888;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    #copy {
+        font-size: 14px;
+    }
+}
+
+/*---fin cambioos---*/
+
+/*---------------------------------------------*/
+#firstMenu {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#firstMenu a {
+    text-decoration: none;
+    color: #333; 
+    padding: 8px 16px;
+    border: 2px solid #af4c81;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+#firstMenu a:hover {
+    background-color: rgb(214, 146, 146);
+    color: #fff; 
+}
+
+/*-----------------Carrucel-------------------*/
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 50px;
+}
+
+.slider-frame {
+    width: 80%; /* Utilizamos un porcentaje para que sea más flexible */
+    max-width: 1280px; /* Establecemos un ancho máximo */
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%; /* Cambiamos el ancho para adaptarse al número de imágenes */
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+    width: 25%; /* Distribuimos equitativamente el espacio para cada imagen */
+    list-style: none;
+}
+
+html{
+    background-color: #BFC9CA;
+    border: 0px;
+    padding: 0px;
+}
+
+.nam{
+    font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(https://www.10wallpaper.com/wallpaper/3840x2400/1803/Artificial_Intelligence_Robot_Humanoid_3840x2400.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family:cursive;
+    text-align:right;
+    margin-right: 10px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+a:hover{
+    color:#F5B7B1 ;
+}
+
+header{
+    display: flex;
+    min-height: 60px;
+    background-color: white ;
+    justify-content:space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+    height: 40px;
+    margin-right: 10px;
+}
+
+.publicidad img{
+    display: flex;
+    height: 250px;
+    margin-left: 1000px;
+}
+
+h3{
+    display: flex;
+    font-size: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    padding-left: 50px;
+    margin-left: 900px;
+    margin-top: 120px;
+}
+
+/*--------------cambios footer---------------------*/
+footer {
+    background-color: #f4f4f4;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+}
+footer a{
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    font-size: 18px;
+}
+#copy{
+    margin-top: 20px;
+    font-style: italic;
+    color: #777;
+}
+
+footer a:hover{
+    color: #555;
+}
+
+
+/*---------------------------------------------*/
+#firstMenu {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+#firstMenu a {
+    text-decoration: none;
+    color: #333; 
+    padding: 8px 16px;
+    border: 2px solid #af4c81;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+#firstMenu a:hover {
+    background-color: rgb(214, 146, 146);
+    color: #fff; 
+}
+
+/*-----------------Slider-------------------*/
+h2 {
+    text-align: center;
+    font-size: 1.5rem; /* Reducimos el tamaño del título */
+    padding-top: 30px; /* Ajustamos el espacio superior */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Cambiamos la fuente */
+}
+
+.slider-frame {
+    width: 25%; /* Reducimos aún más el ancho del slider */
+    max-width: 300px; /* Establecemos un ancho máximo */
+    margin: 30px 0 0 auto; /* Mover el slider al lado derecho */
+    overflow: hidden;
+}
+
+.Slider-Imagenes ul {
+    display: flex;
+    padding: 0;
+    width: 300%; /* Ajustamos el ancho para adaptarse al número de imágenes */
+    animation: slide 20s infinite alternate ease-in-out;
+}
+
+.Slider-Imagenes li {
+    width: 33.33%; /* Distribuimos equitativamente el espacio para cada imagen */
+    list-style: none;
+}
+
+.Slider-Imagenes img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    25% {margin-left: 0;}
+
+    30% {margin-left: -100%;}
+    55% {margin-left: -100%;}
+
+    60% {margin-left: -200%;}
+    85% {margin-left: -200%;}
+
+    90% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+
+/*---------------------------------------------*/
+
+button {
+    background-color: #47a386;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+}
+
+.modal-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;  
+    top: 0;
+left: 0;
+height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+}
+
+.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal {
+    background-color: #fff;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.modal h1 {
+    margin: 0;
+}
+
+.modal p {
+    opacity: 0.7;
+    font-size: 14px;
+}
+
+/*responsivo*/
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .logo img {
+        height: 4vw; /* Usar vw para el tamaño del logo */
+        margin-right: 2vw; /* Margen relativo */
+    }
+
+    /* Otros estilos específicos para dispositivos móviles */
+}

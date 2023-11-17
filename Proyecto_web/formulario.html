@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario de contacto</title>
+
+    <link rel="stylesheet" href="styles\formulario.css">
+    <link rel="stylesheet" href="styles/font-awesome.css">
+
+    <script src="scripts/jquery-3.2.1.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts\formulario.js" defer></script>
+</head>
+<body>
+    <header id="header">
+        <div class="logo-container">
+            <h1>Formulario</h1>
+        </div>
+        <nav id="main-nav">
+            <a href="Principal.html">Inicio</a>
+            <a href="Noticias.html">News</a>
+            <a href="Profesores.html">Profesores</a>
+            <div class="notifications">
+                <a href="javascript:void(0)" id="notificacionesLink" onclick="mostrarNotificaciones()">Notificaciones <span id="contadorNotificaciones">0</span></a>
+                <div id="notificacionesPopUp" class="notificaciones-popup">
+                    <div class="notificaciones-content">
+                        <span class="cerrar" onclick="cerrarNotificaciones()">&times;</span>
+                        <h2>Notificaciones</h2>
+                        <p id="numNotificaciones">Tienes <span id="numNotificacionesContador">3</span> notificaciones</p>
+                        <ul id="listaNotificaciones">
+                            <li>Notificación 1</li>
+                            <li>Notificación 2</li>
+                            <li>Notificación 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="form_wrap">
+
+        <section class="cantact_info">
+            <section class="info_title">
+                <span class="fa fa-user-circle"></span>
+                <h2>INFORMACION<br>DE CONTACTO</h2>
+            </section>
+            <section class="info_items">
+                <p><span class="fa fa-envelope"></span> ejemplo.contact@gmail.com</p>
+                <p><span class="fa fa-mobile"></span> +52 2461164503</p>
+            </section>
+        </section>
+
+        <form action="" class="form_contact">
+            <h2>Encantados de recibir su mensaje</h2>
+            <div class="user_info">
+                <label for="names">Nombre completo *</label>
+                <input type="text" id="names">
+
+                <label for="phone">Telefono / Celular</label>
+                <input type="text" id="phone">
+
+                <label for="email">Correo electronico *</label>
+                <input type="text" id="email">
+
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje"></textarea>
+
+                <input type="button" value="Enviar Mensaje" id="btnSend">
+            </div>
+        </form>
+
+    </section>
+    <footer>
+        <a href="https://www.facebook.com/profile.php?id=100075559917119&mibextid=ZbWKwL">Facebook</a>
+        <a href="https://www.instagram.com/upiit_ipn/">Instagram</a>
+        <p id="copy"><em>Copyright &copy; 2023 Unidad Profesional Interdisciplinaria de Ingeniería Campus Tlaxcala</em>
+        <p id="last-update">Última actualización: <span id="hoy"></span></p>
+    
+    </footer>
+</body>
+</html>

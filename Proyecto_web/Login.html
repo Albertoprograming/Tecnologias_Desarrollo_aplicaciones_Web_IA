@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/login.css">
+    <script src="scripts/footer.js" defer></script>
+    <script defer></script>
+    <title>Login</title>
+    <title>UPIITOGRAFO</title>
+    <link rel="webside icon" type="png" href="Images\paginaini\icon.png">
+
+</head>
+
+<body>
+    <header>
+
+        <div class="logo">
+            <img src="Images\paginaini\Burrito.png" alt="Logo">
+        </div>
+        <a href="https://www.upiit.ipn.mx/" class="nam">
+            <h1 class="nombre">UPIITOGRAFO </h1>
+        </a>
+        <nav id="Login">
+            <a href="Registro.html">Registro</a>
+        </nav>
+    </header>
+
+    <!----------------------Login------------------------------->
+    <section class="login-container">
+        <h2>Bienvenido</h2>
+        <form id="loginForm" action="Principal.html" method="post">
+            <!-- Campos de usuario y contraseña -->
+            <div class="input-group">
+                <label for="username">Usuario:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button class="login-button" type="submit">Iniciar Sesión</button>
+        </form>
+    </section>
+
+    <!----------------------Fin-Login----------------------------->
+
+    <!---------------------Footer---------------------------------->
+    <footer>
+        <a href="https://www.facebook.com/profile.php?id=100075559917119&mibextid=ZbWKwL">Facebook</a>
+        <a href="https://www.instagram.com/upiit_ipn/">Instagram</a>
+        <a href="formulario.html">Contacto</a>
+        <p id="copy"><em>Copyright &copy; 2023 Unidad Profesional Interdisciplinaria de Ingeniería Campus Tlaxcala</em>
+        <p id="last-update">Última actualización: <span id="hoy"></span></p>
+    </footer>
+
+</body>
+
+</html>

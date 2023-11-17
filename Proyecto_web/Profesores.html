@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/profesores.css">
+    <script src="scripts/footer.js" defer></script>
+
+    <title>UPIITOGRAFO</title>
+    <link rel="webside icon" type="png" href="Images\Paginaini\icon.png">
+</head>
+
+<body>
+
+    <header id="header">
+        <div class="logo-container">
+            <h1>Profesores</h1>
+        </div>
+        <nav id="main-nav">
+            <a href="Principal.html">Inicio</a>
+            <a href="Noticias.html">News</a>
+            <div class="notifications">
+                <a href="javascript:void(0)" id="notificacionesLink" onclick="mostrarNotificaciones()">Notificaciones <span id="contadorNotificaciones">0</span></a>
+                <div id="notificacionesPopUp" class="notificaciones-popup">
+                    <div class="notificaciones-content">
+                        <span class="cerrar" onclick="cerrarNotificaciones()">&times;</span>
+                        <h2>Notificaciones</h2>
+                        <p id="numNotificaciones">Tienes <span id="numNotificacionesContador">3</span> notificaciones</p>
+                        <ul id="listaNotificaciones">
+                            <li>Notificación 1</li>
+                            <li>Notificación 2</li>
+                            <li>Notificación 3</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <br>
+    <form id="searchForm">
+        <input id="Buscar" class="buscar" Placeholder="Buscar Profesor" oninput="search()">
+        <button type="button" id="btn" class="button" onclick="search()">Buscar</button>
+    </form>
+
+    <br>
+
+    <main class="tabla">
+        <section class="tablah">
+            <h2>IPN-UPIIT</h2>
+        </section>
+
+        <section class="tablab">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Ranking</th>
+                        <th>Apellido, Nombre</th>
+                        <th>Área de especialización</th>
+                        <th>No. de calificaciones</th>
+                        <th>Promedio</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    
+                    <tr>
+                        <td> 1</td>
+                        <td> <img src="Images\Paginaini\cus1.png">R. Jesúsu</td>
+                        <td>Programación</td>
+                        <td>120</td>
+                        <td>9.8</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td> <img src="Images\Paginaini\icon2.jfif">R. Jesúsu</td>
+                        <td>Programación</td>
+                        <td>120</td>
+                        <td>9.8</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>3</td>
+                        <td> <img src="Images\Paginaini\icon3.jfif">R. Jesúsu</td>
+                        <td>Programación</td>
+                        <td>120</td>
+                        <td>9.8</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>4</td>
+                        <td> <img src="Images\Paginaini\icon4.jfif">Octavio</td>
+                        <td>Programación</td>
+                        <td>120</td>
+                        <td>9.8</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td> <img src="Images\Paginaini\icon5.jfif">R. Jesúsu</td>
+                        <td>Programación</td>
+                        <td>120</td>
+                        <td>9.8</td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td> <img src="Images\Paginaini\iconp.png">R. Jesúsu</td>
+                        <td>Programación</td>
+                        <td>120</td>
+                        <td>9.8</td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td> <img src="Images\Paginaini\/icon7.jfif">R. Jesúsu</td>
+                        <td>Programación</td>
+                        <td>120</td>
+                        <td>9.8</td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td> <img src="Images\Paginaini\iconp.png">R. Jesúsu</td>
+                        <td>Programación</td>
+                        <td>120</td>
+                        <td>9.8</td>
+                    </tr>
+
+                    <tr>
+                        <td>9</td>
+                        <td> <img src="Images\Paginaini\iconp.png">R. Jesúsu</td>
+                        <td>Programación</td>
+                        <td>120</td>
+                        <td>9.8</td>
+                    </tr>
+
+                    <tr>
+                        <td>10</td>
+                        <td> <img src="Images\Paginaini\iconp.png">R. Jesúsu</td>
+                        <td>Programación</td>
+                        <td>120</td>
+                        <td>9.8</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+</body>
+
+<footer>
+    <a href="https://www.facebook.com/profile.php?id=100075559917119&mibextid=ZbWKwL">Facebook</a>
+    <a href="https://www.instagram.com/upiit_ipn/">Instagram</a>
+    <a href="formulario.html">Contacto</a>
+    <p id="copy"><em>Copyright &copy; 2023 Unidad Profesional Interdisciplinaria de Ingeniería Campus Tlaxcala</em>
+    <p id="last-update">Última actualización: <span id="hoy"></span></p>
+</footer>
+</html>

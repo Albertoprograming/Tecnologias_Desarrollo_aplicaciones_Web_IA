@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts/footer.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...tu-código-de-integridad..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>UPIITOGRAFO</title>
+    <link rel="webside icon" type="png" href="Images\paginaini\icon.png">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="styles\principal.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+</body>
+<header id="header">
+    <div class="logo-container">
+        <h1>UPIITOGRAFO</h1>
+    </div>
+    <nav id="main-nav">
+        <a href="Login.html">Iniciar sesion</a>
+        <a href="Noticias.html">News</a>
+        <a href="Profesores.html">Profesores</a>
+        <a href="usuario.html">Tienda</a>
+        <div class="notifications">
+            <a href="javascript:void(0)" id="notificacionesLink" onclick="mostrarNotificaciones()">Notificaciones <span id="contadorNotificaciones">0</span></a>
+            <div id="notificacionesPopUp" class="notificaciones-popup">
+                <div class="notificaciones-content">
+                    <span class="cerrar" onclick="cerrarNotificaciones()">&times;</span>
+                    <h2>Notificaciones</h2>
+                    <p id="numNotificaciones">Tienes <span id="numNotificacionesContador">3</span> notificaciones</p>
+                    <ul id="listaNotificaciones">
+                        <li>Notificación 1</li>
+                        <li>Notificación 2</li>
+                        <li>Notificación 3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--------------------------Fin-Barra de navegacion----------------------------->
+
+<!-----------------------------------Modal-------------------------------------->
+
+<div id="modal_container" class="modal-container">
+    <div class="modal">
+    <h1>Bienvenido</h1>
+    <p>
+        Bienvenido al UPIITOGRAFO... Texto mamalón
+    </p>
+    <button id="close">Cerrar</button>
+    </div>
+</div>
+<!--------------------------------Fin-Modal-------------------------------------->
+
+<!------------------------Inicio-Slider----------------------------->
+<section class="slider-frame">
+    <h2>Cositas para ver</h2>
+        <div class="Slider-Imagenes">
+            <ul>
+                <li><img src="Images/ajedrez.jpg" alt="Slide 1"></li>
+                <li><img src="Images/ajedrez.jpg" alt="Slide 2"></li>
+                <li><img src="Images/ajedrez.jpg" alt="Slide 3"></li>
+            </ul>
+        </div>
+</section>
+<!--------------------------Fin-carrucel----------------------------->
+
+<div class="text">
+    <h3>En el mundo de la ingeniería, donde las
+        ideas revolucionarias a menudo comienzan como chismes de cafetería.</h3>
+
+</div>
+
+
+<div class="publicidad">
+    <img src="Images\paginaini\prom.jfif" alt="Borrito en venta">
+</div>
+
+
+<footer>
+    <a href="https://www.facebook.com/profile.php?id=100075559917119&mibextid=ZbWKwL">Facebook</a>
+    <a href="https://www.instagram.com/upiit_ipn/">Instagram</a>
+    <a href="formulario.html">Contacto</a>
+    <p id="copy"><em>Copyright &copy; 2023 Unidad Profesional Interdisciplinaria de Ingeniería Campus Tlaxcala</em>
+    <p id="last-update">Última actualización: <span id="hoy"></span></p>
+</footer>
+<script src="scripts\principal.js"></script>
+</body>
+
+</html>

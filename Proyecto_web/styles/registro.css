@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+}
+
+header {
+    display: flex;
+    min-height: 60px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nam {
+    text-decoration: none;
+    color: black;
+    font-family: cursive;
+    text-align: right;
+    margin-right: 10px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+.nombre {
+    font-size: 24px;
+    margin: 0;
+}
+
+nav {
+    text-align: right;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.registro-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.registro-form h2 {
+    color: #333;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.registro-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.registro-button:hover {
+    background-color: #45a049;
+}
+
+.frase-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.frase {
+    font-size: 18px;
+    color: #555;
+}
+
+.frase a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+.frase a:hover {
+    text-decoration: underline;
+}
+
+/*footer chido*/
+footer {
+    background-color: rgb(236, 240, 241, 10);
+    padding: 40px 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil en la parte superior */
+}
+
+/* Enlaces */
+footer a {
+    text-decoration: none;
+    color: #444;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 20px; /* Mayor espacio entre los enlaces */
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    border-bottom: 2px solid transparent; /* Subrayado transparente */
+}
+
+/* Estilo al pasar el mouse */
+footer a:hover {
+    color: #F5B7B1;
+    border-bottom-color: #F5B7B1; 
+}
+
+/* Texto de Copyright */
+#copy {
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5; 
+}
+
+#last-update {
+    font-size: 18px;
+    color: #888;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    #copy {
+        font-size: 14px;
+    }
+}
