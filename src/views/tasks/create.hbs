@@ -1,0 +1,21 @@
+<div class="mx-auto my-12 p-8 bg-white w-full max-w-2xl border border-gray-200 rounded-lg shadow-lg text-gray-800">
+    <h1 class="text-center text-3xl font-bold mb-6">Califica a tu profesor</h1>
+    <form action="/create" method="POST" class="space-y-4">
+        <select class="border border-gray-300 rounded-md bg-gray-100 w-full text-lg placeholder-gray-500 py-2 px-4 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent" name="profesor">
+            <option value="" selected disabled>Selecciona Profesor</option>
+            <option value="Esau Escobar Dominguez">ESCOBAR JUÁREZ ESAÚ ELIEZER</option>
+            <option value="ALONSO PEREZ VICTOR ERNESTO">ALONSO PEREZ VICTOR ERNESTO</option>
+            <option value="ROJAS HERNÁNDEZ JESÚS">ROJAS HERNÁNDEZ JESÚS</option>
+            <!-- Agregar mas prpofes -->
+        </select>
+
+        <textarea class="border border-gray-300 rounded-md bg-gray-100 w-full text-lg placeholder-gray-500 py-2 px-4 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent" placeholder="Comentario" name="descripcion"></textarea>
+
+        <div class="text-center">
+            <label for="calificacion" class="block mb-2 text-lg">Calificación</label>
+            <input type="number" id="calificacion" name="calificacion" min="0" max="10" required class="border border-gray-300 rounded-md bg-gray-100 text-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:border-transparent w-full sm:w-1/4">
+        </div>
+
+        <button type="submit" class="rounded-md bg-indigo-600 w-full text-lg text-white font-semibold py-3 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:border-transparent">Enviar</button>
+    </form>
+</div>

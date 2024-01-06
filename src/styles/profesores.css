@@ -1,0 +1,25 @@
+/* profesores.css */
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #000; /* Borde negro para que se note */
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #4CAF50; /* Fondo verde para los encabezados */
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2; /* Filas alternadas en gris para mejor legibilidad */
+  }
+  
+  tr:hover {
+    background-color: #ddd; /* Resaltar fila al pasar el ratón por encima */
+  }
+  

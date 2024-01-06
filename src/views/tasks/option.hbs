@@ -1,0 +1,61 @@
+<div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+    <div class="bg-white overflow-hidden shadow-lg sm:rounded-lg mt-12">
+        <table class="min-w-full leading-normal">
+            <thead>
+                <tr class="bg-indigo-700 text-white">
+                    <th
+                        class="px-5 py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">
+                        ID
+                    </th>
+                    <th
+                        class="px-5 py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">
+                        Profesor
+                    </th>
+                    <th
+                        class="px-5 py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">
+                        Descripción
+                    </th>
+                    <th
+                        class="px-5 py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">
+                        Calificación
+                    </th>
+                    <th
+                        class="px-5 py-3 border-b-2 border-gray-200 text-left text-xs font-semibold uppercase tracking-wider">
+                        Acciones
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each registros}}
+                <tr class="hover:bg-gray-100">
+                    <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                        {{id}}
+                    </td>
+                    <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                        {{profesor}}
+                    </td>
+                    <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                        {{descripcion}}
+                    </td>
+                    <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm">
+                        {{calificacion}}
+                    </td>
+                    <td class="px-5 py-5 border-b border-gray-200 bg-white text-sm flex justify-around">
+                        <form action="/tasks/delete" method="POST">
+                            <input type="hidden" value="{{id}}" name="id">
+                            <button class="text-red-600 hover:text-red-900">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </form>
+                        <a href="/tasks/edit/{{id}}" class="text-green-600 hover:text-green-900">
+                            <i class="fas fa-pen"></i>
+                        </a>
+                        <!-- Añade este formulario en tu archivo 'option.hbs' o en un archivo de navegación común-->
+
+                    </td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+</div>
